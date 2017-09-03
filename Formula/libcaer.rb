@@ -7,15 +7,22 @@ class Libcaer < Formula
 
   version "2.3.0"
 
+  option "with-libserialport", "Build with serial port support for eDVS and similar devices."
   option "with-opencv", "Build with OpenCV support for better frame enhancement."
 
   depends_on "cmake" => :build
   depends_on "pkg-config" => :build
   depends_on "libusb"
+  depends_on "rene-dev/sigrok/libserialport" => :optional
   depends_on "opencv" => :optional
 
   def install
     args = []
+
+    if build.with? "libserialport"
+      args << "-DENABLE_SERIALDEV=1"
+    end
+
     if build.with? "opencv"
       args << "-DENABLE_OPENCV=1"
     end
