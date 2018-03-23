@@ -15,6 +15,8 @@ class Caer < Formula
   depends_on "pkg-config" => :build
   depends_on "libcaer"
   depends_on "boost"
+  depends_on "libpng"
+  depends_on "libuv"
   depends_on "google-perftools" => :optional if build.with? "tcmalloc"
   depends_on "opencv" => :optional
   depends_on "sfml" => :optional if build.with? "visualizer"
