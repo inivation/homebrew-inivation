@@ -1,11 +1,11 @@
 class Libcaer < Formula
-  desc "Minimal C library to access, configure and get/send AER data from sensors or to/from neuromorphic processors."
+  desc "Minimal C library to access, configure and get data from neuromorphic sensors and processors."
   homepage "https://github.com/inilabs/libcaer/"
   head "https://github.com/inilabs/libcaer.git"
-  url "https://github.com/inilabs/libcaer/archive/2.4.0.zip"
-  sha256 "29771a54f6794efe58b44887f88fa37fffd256eae79bd46dbc5fff17ead7352c"
+  url "https://github.com/inilabs/libcaer/archive/2.4.2.tar.gz"
+  sha256 "96eebab192eac7fa23d5653d9a3e9772eaa7669f0b6bce5f4f7d0cc32c31afb9"
 
-  version "2.4.0"
+  version "2.4.2"
 
   option "with-libserialport", "Build with serial port support for eDVS and similar devices."
   option "with-opencv", "Build with OpenCV support for better frame enhancement."
