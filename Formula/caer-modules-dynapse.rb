@@ -1,4 +1,4 @@
-class Caer < Formula
+class CaerModulesDynapse < Formula
   desc "Modules to work with aiCTX's Dynap-SE neuromorphic processor."
   homepage "https://github.com/inilabs/caer-modules-dynapse/"
   head "https://github.com/inilabs/caer-modules-dynapse.git"
