@@ -1,5 +1,5 @@
 class Caer < Formula
-  desc "C/C++ framework to process data from neuromorphic sensors."
+  desc "Event-based processing framework for neuromorphic devices, written in C/C++, targeting embedded and desktop systems."
   homepage "https://github.com/inilabs/caer/"
   head "https://github.com/inilabs/caer.git"
   url "https://github.com/inilabs/caer/archive/1.1.0.zip"
