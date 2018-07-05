@@ -1,8 +1,8 @@
 class Libcaer < Formula
   desc "Minimal C library to access, configure and get data from neuromorphic sensors and processors."
-  homepage "https://github.com/inilabs/libcaer/"
-  head "https://github.com/inilabs/libcaer.git"
-  url "https://github.com/inilabs/libcaer/archive/2.4.2.tar.gz"
+  homepage "https://github.com/inivation/libcaer/"
+  head "https://github.com/inivation/libcaer.git"
+  url "https://github.com/inivation/libcaer/archive/2.4.2.tar.gz"
   sha256 "96eebab192eac7fa23d5653d9a3e9772eaa7669f0b6bce5f4f7d0cc32c31afb9"
 
   version "2.4.2"

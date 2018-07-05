@@ -1,7 +1,7 @@
 class CaerModulesDynapse < Formula
   desc "Modules to work with aiCTX's Dynap-SE neuromorphic processor."
-  homepage "https://github.com/inilabs/caer-modules-dynapse/"
-  head "https://github.com/inilabs/caer-modules-dynapse.git"
+  homepage "https://github.com/inivation/caer-modules-dynapse/"
+  head "https://github.com/inivation/caer-modules-dynapse.git"
 
   version "1.2.1"
 

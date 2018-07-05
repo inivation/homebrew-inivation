@@ -1,9 +1,10 @@
-# homebrew-inilabs
+# homebrew-inivation
+
 Homebrew repository for iniVation AG software on MacOS X.
 
 Usage:
 
-    brew tap inilabs/inilabs
+    brew tap inivation/inivation
 
     # Example: install libcaer with OpenCV and eDVS support
     brew install libcaer --with-opencv --with-libserialport

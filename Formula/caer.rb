@@ -1,8 +1,8 @@
 class Caer < Formula
   desc "Event-based processing framework for neuromorphic devices, written in C/C++, targeting embedded and desktop systems."
-  homepage "https://github.com/inilabs/caer/"
-  head "https://github.com/inilabs/caer.git"
-  url "https://github.com/inilabs/caer/archive/1.1.0.zip"
+  homepage "https://github.com/inivation/caer/"
+  head "https://github.com/inivation/caer.git"
+  url "https://github.com/inivation/caer/archive/1.1.0.zip"
   sha256 "e313bce07348469004faf0c083cfb7de204d1a266a6c553567fce2abaee2701e"
 
   version "1.1.0"
