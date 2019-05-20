@@ -2,10 +2,10 @@ class Libcaer < Formula
   desc "Minimal C library to access, configure and get data from neuromorphic sensors and processors."
   homepage "https://gitlab.com/inivation/libcaer/"
   head "https://gitlab.com/inivation/libcaer.git"
-  url "https://gitlab.com/inivation/libcaer/-/archive/3.1.0/libcaer-3.1.0.tar.gz"
-  sha256 "e92a3a5664522b76f131e5c4c86406180705f3ed3bcc9b9bdb0360cf67470e4f"
+  url "https://gitlab.com/inivation/libcaer/-/archive/3.2.0/libcaer-3.2.0.tar.gz"
+  sha256 "71703522db3092b757ca83555d7687a00aa7cbe0557d4fe0b1ac854ee0d581f0"
 
-  version "3.1.0"
+  version "3.2.0"
 
   option "with-libserialport", "Build with serial port support for eDVS and similar devices."
   option "with-opencv", "Build with OpenCV support for better frame enhancement."
@@ -13,7 +13,7 @@ class Libcaer < Formula
   depends_on "cmake" => :build
   depends_on "pkg-config" => :build
   depends_on "libusb"
-  depends_on "rene-dev/sigrok/libserialport" => :optional
+  depends_on "libserialport" => :optional
   depends_on "opencv" => :optional
 
   def install
