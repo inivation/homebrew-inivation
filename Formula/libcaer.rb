@@ -3,7 +3,7 @@ class Libcaer < Formula
   homepage "https://gitlab.com/inivation/libcaer/"
   head "https://gitlab.com/inivation/libcaer.git"
   url "https://gitlab.com/inivation/libcaer/-/archive/3.2.0/libcaer-3.2.0.tar.gz"
-  sha256 "71703522db3092b757ca83555d7687a00aa7cbe0557d4fe0b1ac854ee0d581f0"
+  sha256 "d448cbbdfce67b25c225bb5fd82e26aa23eefc0bfabe044d20663c9b2c41abc7"
 
   version "3.2.0"
 
