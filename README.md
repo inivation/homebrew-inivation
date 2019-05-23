@@ -9,13 +9,11 @@ Usage:
     # Example: install libcaer with OpenCV and eDVS support
     brew install libcaer --with-opencv --with-libserialport
 
-    # Example: install cAER with OpenCV and Visualizer support
-    brew install caer --with-opencv --with-visualizer
-
-    # Example: install cAER extra modules for Dynap-SE
-    brew install caer-modules-dynapse
+    # Example: install dv-runtime
+    brew install dv-runtime
 
 ## Troubleshooting
+
 First, please run 'brew update' (twice) and 'brew doctor'.
 
 Second, read the [Troubleshooting Checklist](http://docs.brew.sh/Troubleshooting.html).
