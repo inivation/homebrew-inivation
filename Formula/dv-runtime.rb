@@ -1,4 +1,4 @@
-class DV-Runtime < Formula
+class DVRuntime < Formula
   desc "C++ event-based processing framework for neuromorphic cameras, targeting embedded and desktop systems."
   homepage "https://gitlab.com/inivation/dv-runtime/"
   head "https://gitlab.com/inivation/dv-runtime.git"
@@ -14,6 +14,7 @@ class DV-Runtime < Formula
   depends_on "openssl"
   depends_on "opencv"
   depends_on "google-perftools"
+  depends_on "lz4"
 
   def install
     args = []
