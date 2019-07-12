@@ -1,4 +1,4 @@
-class DVRuntime < Formula
+class DvRuntime < Formula
   desc "C++ event-based processing framework for neuromorphic cameras, targeting embedded and desktop systems."
   homepage "https://gitlab.com/inivation/dv-runtime/"
   head "https://gitlab.com/inivation/dv-runtime.git"
