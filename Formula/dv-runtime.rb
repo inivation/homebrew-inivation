@@ -2,10 +2,10 @@ class DvRuntime < Formula
   desc "C++ event-based processing framework for neuromorphic cameras, targeting embedded and desktop systems."
   homepage "https://gitlab.com/inivation/dv-runtime/"
   head "https://gitlab.com/inivation/dv-runtime.git"
-  url "https://gitlab.com/inivation/dv-runtime/-/archive/1.0.1/dv-runtime-1.0.1.tar.gz"
-  sha256 "f2e7c785a4d92a0378c350d9c9d95f556faa3a88d484e60ff89abb310f430ff5"
+  url "https://gitlab.com/inivation/dv-runtime/-/archive/1.0.2/dv-runtime-1.0.2.tar.gz"
+  sha256 "7c770056f76b0e8ae9079ed7c6a9cc03706d0f3b70b6605c0de5b769ee3567d8"
 
-  version "1.0.1"
+  version "1.0.2"
 
   depends_on "cmake" => :build
   depends_on "pkg-config" => :build
