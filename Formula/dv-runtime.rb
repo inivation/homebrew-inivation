@@ -3,7 +3,7 @@ class DvRuntime < Formula
   homepage "https://gitlab.com/inivation/dv-runtime/"
   head "https://gitlab.com/inivation/dv-runtime.git"
   url "https://gitlab.com/inivation/dv-runtime/-/archive/1.0.2/dv-runtime-1.0.2.tar.gz"
-  sha256 "7c770056f76b0e8ae9079ed7c6a9cc03706d0f3b70b6605c0de5b769ee3567d8"
+  sha256 "155e6e86f7b2bd315e701d0fac627b8f42d615bf25a2f44823330351de9d3520"
 
   version "1.0.2"
 
