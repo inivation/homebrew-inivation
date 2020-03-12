@@ -2,10 +2,10 @@ class Libcaer < Formula
   desc "Minimal C library to access, configure and get data from neuromorphic sensors and processors."
   homepage "https://gitlab.com/inivation/dv/libcaer/"
   head "https://gitlab.com/inivation/dv/libcaer.git"
-  url "https://gitlab.com/inivation/dv/libcaer/-/archive/3.3.4/libcaer-3.3.4.tar.gz"
-  sha256 "92dc64fd8344894e1df30fb929e742b5d9dac1dd1f12343b87f7350cc28c5716"
+  url "https://gitlab.com/inivation/dv/libcaer/-/archive/3.3.5/libcaer-3.3.5.tar.gz"
+  sha256 "1be37de912824b4ffa3e3e5dab5adbb5ba48fff7cd4d0192d51ff28eadf27a9e"
 
-  version "3.3.4"
+  version "3.3.5"
 
   option "with-libserialport", "Build with serial port support for eDVS and similar devices."
   option "with-opencv", "Build with OpenCV support for better frame enhancement."
