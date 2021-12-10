@@ -2,8 +2,8 @@ class DvProcessing < Formula
   desc "Generic algorithms for event cameras."
   homepage "https://gitlab.com/inivation/dv/dv-processing/"
   head "https://gitlab.com/inivation/dv/dv-processing-internal.git"
-  url "https://release.inivation.com/processing/dv-processing-1.0.0.zip"
-  sha256 "0f9465e0736dcb5d7a84d03b55e91209f282de60ec91c6f235b43b04eb765f92"
+  url "https://release.inivation.com/processing/dv-processing-1.0.0.tar.gz"
+  sha256 "82842f94a7bce4680edd217bc75f0a47d67fbef0fd0dd16bc502680bed347e61"
 
   version "1.0.0"
 
