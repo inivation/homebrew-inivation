@@ -3,7 +3,7 @@ class DvProcessing < Formula
   homepage "https://gitlab.com/inivation/dv/dv-processing/"
   head "https://gitlab.com/inivation/dv/dv-processing-internal.git"
   url "https://release.inivation.com/processing/dv-processing-1.0.0.tar.gz"
-  sha256 "82842f94a7bce4680edd217bc75f0a47d67fbef0fd0dd16bc502680bed347e61"
+  sha256 "10d4b799df1ed5c731a047b56300774084da01b29fc7de4a7c7a7799b17dbdf2"
 
   version "1.0.0"
 
