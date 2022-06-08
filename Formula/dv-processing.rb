@@ -6,6 +6,8 @@ class DvProcessing < Formula
 
   version "1.4.0"
 
+  option "with-python", "Build and install Python 3 module."
+
   depends_on "cmake" => :build
   depends_on "pkg-config" => :build
   depends_on "boost"
@@ -15,11 +17,15 @@ class DvProcessing < Formula
   depends_on "fmt"
   depends_on "lz4"
   depends_on "zstd"
-  depends_on "python"
-  depends_on "numpy"
+  depends_on "python" => :optional
+  depends_on "numpy" if build.with? "python"
 
   def install
-    args = ["-DENABLE_TESTS=1", "-DENABLE_BENCHMARKS=0", "-DENABLE_SAMPLES=0", "-DENABLE_PYTHON=1"]
+    args = ["-DENABLE_TESTS=1", "-DENABLE_BENCHMARKS=0", "-DENABLE_SAMPLES=0"]
+
+    if build.with? "python"
+      args << "-DENABLE_PYTHON=1"
+    end
 
     system "cmake", ".", *std_cmake_args, *args
     system "make", "install"
