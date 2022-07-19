@@ -1,10 +1,10 @@
 class DvProcessing < Formula
   desc "Generic algorithms for event cameras."
   homepage "https://gitlab.com/inivation/dv/dv-processing/"
-  url "https://release.inivation.com/processing/dv-processing-1.4.0.tar.gz"
-  sha256 "07d3e0bd1bdec2a908af79f0515178036fa3a0652e2ebc59f59e101f14dcdeb3"
+  url "https://release.inivation.com/processing/dv-processing-1.5.0.tar.gz"
+  sha256 "143c01db50702ba76b635a4d5d2ef243f34978f27e9de6d6c6722ebdd976ade0"
 
-  version "1.4.0"
+  version "1.5.0"
 
   option "with-python", "Build and install Python 3 module."
 
@@ -21,7 +21,7 @@ class DvProcessing < Formula
   depends_on "numpy" if build.with? "python"
 
   def install
-    args = ["-DENABLE_TESTS=1", "-DENABLE_BENCHMARKS=0", "-DENABLE_SAMPLES=0"]
+    args = ["-DENABLE_TESTS=1", "-DENABLE_UTILITIES=1", "-DENABLE_BENCHMARKS=0", "-DENABLE_SAMPLES=0"]
 
     if build.with? "python"
       args << "-DENABLE_PYTHON=1"
