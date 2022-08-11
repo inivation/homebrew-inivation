@@ -1,10 +1,10 @@
 class DvProcessing < Formula
   desc "Generic algorithms for event cameras."
   homepage "https://gitlab.com/inivation/dv/dv-processing/"
-  url "https://release.inivation.com/processing/dv-processing-1.5.0.tar.gz"
-  sha256 "143c01db50702ba76b635a4d5d2ef243f34978f27e9de6d6c6722ebdd976ade0"
+  url "https://release.inivation.com/processing/dv-processing-1.5.1.tar.gz"
+  sha256 "13cffd17e761825c4a30997fa009fe381c088353028f683e24ae501439003295"
 
-  version "1.5.0"
+  version "1.5.1"
 
   option "with-python", "Build and install Python 3 module."
 
