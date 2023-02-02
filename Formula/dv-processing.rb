@@ -1,10 +1,10 @@
 class DvProcessing < Formula
   desc "Generic algorithms for event cameras."
   homepage "https://gitlab.com/inivation/dv/dv-processing/"
-  url "https://release.inivation.com/processing/dv-processing-1.6.0.tar.gz"
-  sha256 "8d067e4ef575979dd7c21913a00ea8eddd06c9ae206e49d58ebc87b2ecbef5d6"
+  url "https://release.inivation.com/processing/dv-processing-1.7.8.tar.gz"
+  sha256 "6025348346e6e04666d930c3942e371628dde423609ec6fd246106a62442b571"
 
-  version "1.6.0"
+  version "1.7.8"
 
   option "with-python", "Build and install Python 3 module."
 
@@ -17,6 +17,7 @@ class DvProcessing < Formula
   depends_on "fmt"
   depends_on "lz4"
   depends_on "zstd"
+  depends_on "openssl"
   depends_on "python" => :optional
   depends_on "numpy" if build.with? "python"
 
