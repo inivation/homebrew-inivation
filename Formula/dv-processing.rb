@@ -1,12 +1,10 @@
 class DvProcessing < Formula
   desc "Generic algorithms for event cameras."
   homepage "https://gitlab.com/inivation/dv/dv-processing/"
-  url "https://release.inivation.com/processing/dv-processing-1.7.8.tar.gz"
-  sha256 "6025348346e6e04666d930c3942e371628dde423609ec6fd246106a62442b571"
+  url "https://release.inivation.com/processing/dv-processing-1.7.9.tar.gz"
+  sha256 "ce1a8d384671fe8ae57d3ba264eb3eec6f2ce91ac0bb47545afd2f9ebe8e7454"
 
-  version "1.7.8"
-
-  option "with-python", "Build and install Python 3 module."
+  version "1.7.9"
 
   depends_on "cmake" => :build
   depends_on "pkg-config" => :build
@@ -18,15 +16,9 @@ class DvProcessing < Formula
   depends_on "lz4"
   depends_on "zstd"
   depends_on "openssl"
-  depends_on "python" => :optional
-  depends_on "numpy" if build.with? "python"
 
   def install
-    args = ["-DENABLE_TESTS=1", "-DENABLE_UTILITIES=1", "-DENABLE_BENCHMARKS=0", "-DENABLE_SAMPLES=0"]
-
-    if build.with? "python"
-      args << "-DENABLE_PYTHON=1"
-    end
+    args = ["-DENABLE_TESTS=1", "-DENABLE_UTILITIES=1", "-DENABLE_BENCHMARKS=0", "-DENABLE_SAMPLES=0", "-DENABLE_PYTHON=0"]
 
     system "cmake", ".", *std_cmake_args, *args
     system "make", "install"
