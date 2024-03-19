@@ -6,6 +6,11 @@ class DvProcessing < Formula
 
   version "1.7.9"
 
+  patch do
+    url "file://dv-processing-xcode-15.3-fix.patch"
+    sha256 "120aa80d91be003ec7a6e35da98f58aa1f744eb63294d13023b5e98055919036"
+  end
+
   depends_on "cmake" => :build
   depends_on "pkg-config" => :build
   depends_on "boost"
