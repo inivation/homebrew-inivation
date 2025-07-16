@@ -6,11 +6,6 @@ class DvRuntime < Formula
 
   version "1.6.2"
 
-  patch do
-    url "https://gitlab.com/inivation/homebrew-inivation/-/raw/master/Formula/dv-runtime-boost-filesystem-1.85-fix.patch"
-    sha256 "f574eedce8ce3c325afc7e45830e56e2502c57ce6c8f715019db511bd96b7564"
-  end
-
   depends_on "cmake" => :build
   depends_on "pkg-config" => :build
   depends_on "libcaer"
